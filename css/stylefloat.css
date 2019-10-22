@@ -1,0 +1,38 @@
+header {
+  border: solid;
+  background-color: lightseagreen;
+  height: 70px;;
+}
+
+span {
+  /* border: solid; */
+  margin: 30px;
+  /* background-color: lightgray; */
+  float: left;
+}
+
+nav {
+  /* border: dotted; */
+  /* background-color: lightcyan; */
+  margin: 10px;
+  float: right; /*added*/
+  
+}
+ul {
+  margin: 10px;
+  /* border:solid; */
+  /* background-color: pink; */
+  
+}
+
+li {
+  /* border: solid; */
+  margin-left: 30px;
+  /* background-color: white; */
+  float: left; /*added*/
+}
+
+/*Float container to right and flex it main axis*/
+/*floated container to right , then child elements to left in order*/
+/* Put things inside header in the same line float item span to left*/
+/*When you float items in container it loses its height. give height to header*/
