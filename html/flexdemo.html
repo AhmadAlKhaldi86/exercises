@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="item itemA">A</div>
+  <div class="item itemB">B</div>
+  <div class="item itemC">C</div>
+  <div class="item itemD">D</div>
+  <div class="item itemE">E</div>
+  <div class="item itemF">F</div>
+</div>
+----------------------------------------------------
+.container {
+  border: solid;
+  height: 200px;
+  display: flex;
+/*   flex-direction: column; */
+   flex-direction: row;
+   align-items: streach; /* center streach flex-start flex-end*/
+   justify-content: flex-end; /*same result as float right*/
+  flex-wrap: wrap; /*can be nowrap + add width its more than 100*/
+}
+
+.itemA {
+  background-color: red;
+  width:30%;
+}
+
+.itemB {
+  background-color: blue;
+  width:30%;
+}
+.itemC {
+  background-color: green;
+  width:30%;
+}
+.itemD {
+  background-color: yellow;
+  width:30%;
+}
+.itemE {
+  background-color: gray;
+  width:30%;
+}
+.itemF {
+  background-color: brown;
+  width:30%;
+}
+/* Default Browser layout*/
+-----------------------------------------------------------
