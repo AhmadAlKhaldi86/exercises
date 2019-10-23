@@ -12,7 +12,11 @@
  3) How do you want the items arranged accross the cross axis
  4) Do you want the items to wrap
  
-- Is comparision between float old way vs flexing elements
+###  comparision between float old way vs flexing elements follow below 3 steps
 1) floatVSflex.html creates a header with two elements and points to two css files.
 2) stylefloat.css & styleflex.css files that are called by floatVSflex.html to move elements around.
 3) you can only point to one css file at a time. /**/ comment out other line pointing to second css.
+
+### Using tool like codepen use file flexdemo.html to learn flexing.
+1) Add html div content in html side
+3) copy the CSS declerations to CSS side.
