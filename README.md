@@ -23,3 +23,5 @@
 
 ### Best Practices
 1) We use flex box to aviod positioning an element and make it work for all type of screen sizes. So aviod using width and height on container element you are flexing. so that it will always be at both ends of container. 
+
+2) You can flex and use relative without offsetting the location. to adjust items that are inside the relative-flexed container "look at the cricles"
