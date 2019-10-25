@@ -20,3 +20,6 @@
 ### Using tool like codepen use file flexdemo.html to learn flexing.
 1) Add html div content in html side
 3) copy the CSS declerations to CSS side.
+
+### Best Practices
+1) We use flex box to aviod positioning an element and make it work for all type of screen sizes. So aviod using width and height on container element you are flexing. so that it will always be at both ends of container. 
