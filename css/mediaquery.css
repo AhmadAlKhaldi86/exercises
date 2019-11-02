@@ -1,0 +1,38 @@
+.container {
+  border: solid;
+  margin: 2px;
+}
+
+p {
+  font-size:5px;
+}
+
+/* @media all and (min-width: 700px) {
+  p {
+    font-size: 50px;
+  }
+}
+
+
+@media all and (max-width: 699px) and (min-width: 520px)
+{ 
+  p {
+    font-size: 25px;
+  }
+} */
+
+@media all and (min-width: 550px)
+{ 
+  p {
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  p {
+    font-size: 50px;
+  }
+}
+
+
+

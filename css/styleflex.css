@@ -1,28 +1,24 @@
 header {
-  border: solid;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: darkblue;
 }
 
 span {
   color: white;
-  flex:1;
 }
 
 nav {
-  border: solid;
+  /* border: solid; */
   display: flex;
-  justify-content: flex-end;
-  flex:1;
-
+  justify-content: flex-end; 
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
   list-style-type: none;
-  
+  flex-direction: row;
 }
 
 li {
@@ -34,4 +30,20 @@ a {
   text-decoration: none; 
 }
 
+@media all and (min-width: 768px) {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkblue;
+  flex-direction: column;
+}
 
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+}
+
+/* Think of inline block or block items where you dont need to set column*/ 
