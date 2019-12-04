@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      Name<br />
+      <input id="fvName" type="text" name="Name" /><br />
+      Fruit <input id="fName" type="radio" name="type" /> Vegetable
+      <input type="radio" name="type" />
+      <button type="button">Add</button>
+      <div class="container">
+        <section>
+          <h2>Fruits</h2>
+          <ol id="fList"></ol>
+        </section>
+      </div>
+      <div class="container">
+        <section>
+          <h2>Vegetables</h2>
+          <ol id="vList"></ol>
+        </section>
+      </div>
+    </form>
+    <script>
+      const formElement = document.querySelector("form");
+
+      function addToList(event) {
+        let AddElem = document.getElementById("fvName").value;
+        let FruitList = document.getElementById("fList");
+        let veggieList = document.getElementById("vList");
+        let insertText = document.createTextNode(AddElem);
+        let newItem = document.createElement("li");
+        newItem.appendChild(insertText);
+        FruitList.appendChild(newItem);
+      }
+      document.querySelector("button").addEventListener("click", addToList);
+      // if (document.getElementById("fName").checked) {
+      //   document.querySelector("button").addEventListener("click", addToList);
+      // }
+    </script>
+  </body>
+</html>
