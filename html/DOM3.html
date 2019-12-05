@@ -18,9 +18,10 @@
         let mouseY = event.clientY;
         let location = "X coords: " + mouseX + ", Y coords: " + mouseY;
         document.getElementById("location").innerHTML = location;
-        myDot.style.top = `${mouseY}`;
-        myDot.style.top = `${mouseX}`;
-        myDot.style.transform = `translate(${mouseX}%, ${mouseY}%)`;
+        // myDot.style.top = `${mouseY}`;
+        // myDot.style.left = `${mouseX}`;
+        // myDot.style.transform = `translate(${mouseX}%, ${mouseY}%)`;
+        myDot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
       }
     </script>
   </body>
