@@ -21,6 +21,9 @@ if (actualTemp > desiredTemp) {
   console.log("Nothing to be done");
 }
 
+// Keep a Gap between 80 and 90;
+// I do not want the heat or AC to run if its more or less that an exact temp.
+// My Desired temp is between two values. So i have a variable to each value.
 let desiredTempMax;
 let desiredTempMin;
 desiredTempMax = 80;
@@ -29,6 +32,14 @@ desiredTempMin = 70;
 if (actualTemp > desiredTempMax) {
   console.log("Turn on AC!");
 } else if (actualTemp < desiredTempMin) {
+  console.log("Turn on heat!");
+} else {
+  console.log("Nothing to be done");
+}
+// OR with numbers
+if (actualTemp > 80) {
+  console.log("Turn on AC!");
+} else if (actualTemp < 70) {
   console.log("Turn on heat!");
 } else {
   console.log("Nothing to be done");

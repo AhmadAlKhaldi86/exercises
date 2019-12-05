@@ -1,17 +1,13 @@
 let name = "test";
 console.log(` This is a ${name}`);
 
-let campclass = {
-    stu: 3,
-    tvs: 1,
-    isWarm: true,
-    ta: "Jonathan",
-    teacher: "Aisha"
-}
-/*
-class is the object name
-stu is the property 
-*/
+let campClass = {
+  stu: 3,
+  tvs: 1,
+  isWarm: true,
+  ta: "Jonathan",
+  teacher: "Aisha"
+};
 
-console.log(campclass)
-console.log(campclass.ta)
+console.log(campClass);
+console.log(campClass.ta);

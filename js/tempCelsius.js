@@ -6,7 +6,7 @@
 // and logs the temperature converted to that unit.
 // Notes: K stands for Kelvin. C requires no conversion, print out the original temp.
 
-let targetUnit = "F";
+let targetUnit = "C";
 let tempCelsius = 40;
 
 // Convert C to F --> T(°F) = 20°C × 9/5 + 32 = 68 °F
@@ -17,11 +17,11 @@ switch (targetUnit) {
     console.log(`The temp is ${tempCelsius} Celsius`);
     break;
   case "F":
-    tempCelsius = (tempCelsius * 9) / 5 + 32;
-    console.log(`The temp is ${tempCelsius} F`);
+    tempF = (tempCelsius * 9) / 5 + 32;
+    console.log(`The temp is ${tempF} F`);
     break;
   case "K":
-    tempCelsius = tempCelsius + 273.15;
-    console.log(`The temp is ${tempCelsius} K`);
+    tempK = tempCelsius + 273.15;
+    console.log(`The temp is ${tempK} K`);
     break;
 }
