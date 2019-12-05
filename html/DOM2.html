@@ -11,7 +11,7 @@
       Name<br />
       <input id="fvName" type="text" name="Name" /><br />
       Fruit <input id="fName" type="radio" name="type" /> Vegetable
-      <input type="radio" name="type" />
+      <input id="vName" type="radio" name="type" />
       <button type="button">Add</button>
       <div class="container">
         <section>
@@ -29,17 +29,22 @@
     <script>
       function addToList(event) {
         let AddElem = document.getElementById("fvName").value;
-        let FruitList = document.getElementById("fList");
+        let fruitList = document.getElementById("fList");
         let veggieList = document.getElementById("vList");
         let insertText = document.createTextNode(AddElem);
         let newItem = document.createElement("li");
         newItem.appendChild(insertText);
-        FruitList.appendChild(newItem);
+
+        if (document.getElementById("fName").checked) {
+          console.log("Fruits is checked");
+          fruitList.appendChild(newItem);
+        } else if (document.getElementById("vName").checked) {
+          console.log("Veggie is checked");
+          veggieList.appendChild(newItem);
+        }
       }
+
       document.querySelector("button").addEventListener("click", addToList);
-      // if (document.getElementById("fName").checked) {
-      //   document.querySelector("button").addEventListener("click", addToList);
-      // }
     </script>
   </body>
 </html>
