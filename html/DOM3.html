@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="DOM3Style.css" />
+  </head>
+  <body>
+    <span id="dot"></span>
+    <p id="location"></p>
+    <script>
+      let myDot = document.getElementById("dot");
+      document.addEventListener("mousemove", getMouseLocation);
+      function getMouseLocation(event) {
+        let mouseX = event.clientX;
+        let mouseY = event.clientY;
+        let location = "X coords: " + mouseX + ", Y coords: " + mouseY;
+        document.getElementById("location").innerHTML = location;
+        myDot.style.top = `${mouseY}`;
+        myDot.style.top = `${mouseX}`;
+        myDot.style.transform = `translate(${mouseX}%, ${mouseY}%)`;
+      }
+    </script>
+  </body>
+</html>
