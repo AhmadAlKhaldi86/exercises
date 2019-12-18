@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  var newUl = document.createElement("ul");
+  document.body.appendChild(newUl);
+  var newLi1 = document.createElement("li");
+  var newLi2 = document.createElement("li");
+  newUl.appendChild(newLi1);
+  newUl.appendChild(newLi2);
+  newLi1.textContent =  "list1";
+  newLi2.textContent =  "list2";
+
+  // function contentAdd(e) {
+  //   e.target.style.color = 'red'; 
+  // }
+  // newUl.addEventListener("click", contentAdd, false);
+  // Event.target points to the object that actually triggered the event. 
+  // In this case li. Only if you click on LI it will change color. 
+
+  // So far below is the same as event.target. You are setting lis for each li.
+  // var allLi = document.getElementsByTagName("li");
+  // for (let i = 0; i < allLi.length; i++) {
+  //   allLi[i].addEventListener("click", contentAdd,false)
+  // }
+ 
+  // It always refer to the element to which the event handler is attached to. 
+  // In above  case is the UL.
+  // function contentAdd(e) {
+  //   e.currentTarget.style.color = 'red'; 
+  //   console.log(e.currentTarget);
+  // }
+  // newUl.addEventListener('click', contentAdd, false);
+  
+  // newUl.classList.add("A");
+  // newUl.classList.add("B"); // this will add 
+  // newUl.setAttribute("class","C"); // This will overwrite. 
+  // newUl.className = "D"; // This will update
+
+</script>
+</body>
+</html>
