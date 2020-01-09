@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+// Selector matches the name of the HTML element that identifies this component within a parent component's template
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
