@@ -1,0 +1,10 @@
+.completed {
+  text-decoration: line-through;
+}
+
+.complete-Button {
+   color: #ff1493;
+   border: 1px solid #ff1493;
+   border-radius: 8px;
+}
+
