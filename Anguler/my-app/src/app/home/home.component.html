@@ -1,2 +1,34 @@
-<p>home works!</p>
+<p>{{homeTitle}}</p>
 <ng-content></ng-content>
+
+<!-- Prop Binding -->
+<!-- below will give a value in the input filed -->
+<!-- <br>
+<input value="test"> -->
+<!-- but we want to make it dynamic as below which will be bound to myString in the ts file. -->
+<!-- <input [value]="myString">
+<input [required]="needed"> -->
+
+
+<!-- Event Binding  -->
+<!-- Pass data from the view to the class to do something with it. -->
+<!-- <button (click)="alertMe()">Alert</button> -->
+<!-- <button (click)="alertMe('I like to be home')">Alert</button> -->
+
+
+<!-- Two Ways Binding  -->
+<!-- <input [(ngModel)]="ninja.name"/>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>  -->
+
+
+
+<!-- Custom prop binding - Passing data from component to another component -->
+<!-- I will be passing object ninja from appComp.ts to home.ts -->
+<!-- <p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>  -->
+
+
+<!-- Custom Event Binding  -->
+<!-- Goal is to add Output data from home to root. -->
+<button (click)="fireYellEvent($event)">hitMe</button>

@@ -1,0 +1,9 @@
+.filterContainer {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.searchBox {
+  width: 99.5%;
+  /* display: block; */
+}

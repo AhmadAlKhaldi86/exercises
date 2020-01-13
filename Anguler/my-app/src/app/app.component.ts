@@ -30,4 +30,11 @@ import { Component, Directive } from '@angular/core';
 export class AppComponent {
   title = 'my-angular-app';
   name = 'Ahmad';
+  ninja = {
+    name: "Ahmad",
+    belt: "Blue",
+  }
+  Yell(e) {
+    alert('I am yelling');
+  }
 }

@@ -1,10 +1,33 @@
 export const tasks = [
   {
-    task: "clean the room",
+    task: "fold clothes",
+    completed: false,
+  },
+  {
+    task: " put clothes in dresser",
     completed: true,
   },
   {
-    task: "wash the car",
+    task: " relax",
+    completed: false,
+  },
+  {
+    task: " try to pet cat",
+    completed: true,
+  },
+  {
+    task: " pet dog",
+    completed: false,
+  },
+  {
+    task: 1,
     completed: false,
   },
 ]
+
+export class taskModel {
+  task: string;
+  complete: boolean;
+  // taskClass: string;
+  // isVisible: boolean;
+}

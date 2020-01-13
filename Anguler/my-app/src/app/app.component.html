@@ -8,5 +8,7 @@
   </nav>
 </header>
 <section id="main">
-  <app-home>directive added in home.html using ng-content tag</app-home>
+  <!-- <app-home [ninja]="ninja">directive added in home.html using ng-content tag</app-home> -->
+  <!-- Below is a cusom event binding - $event is the event -->
+  <app-home (onYell)="yell($event)">directive added in home.html using ng-content tag</app-home>
 </section>

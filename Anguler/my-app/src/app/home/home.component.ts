@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from 'protractor';
+import { emit } from 'cluster';
 
 @Component({
 // Selector matches the name of the HTML element that identifies this component within a parent component's template
@@ -13,6 +15,27 @@ import { Component, OnInit } from '@angular/core';
 // OnInit is more like an event when component is initilized then 
 // run function ghOnInit
 export class HomeComponent implements OnInit {
+  // we want to make the title dynamic in home component
+  homeTitle = "Welcome to home page ... "
+  myString = "I like food";
+  needed = true;
+  // Event binding 
+  alertMe(val) {
+    alert(val);
+  }
+  // Two way binding 
+  // ninja = {
+  //   name: "Adam",
+  //   belt: "black",
+  // }
+  // for passing info from root to home.
+  // @Input() ninja;
+  // For passing info from home to root. 
+  @Output() onYell = new EventEmitter();
+
+  fireYellEvent(e) {
+    this.onYell.emit(e);
+  }
 
   constructor() { }
 

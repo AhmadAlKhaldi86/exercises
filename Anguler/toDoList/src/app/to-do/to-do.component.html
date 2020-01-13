@@ -1,5 +1,20 @@
-<p>to-do app</p>
-<ul>
-  <li [ngClass]="{completed: task.completed}" *ngFor="let task of tasks"> 
-    <button *ngIf= !task.completed class="complete-Button">Complete</button>{{ task.task }}</li>
-</ul>
+<div class="container">
+  <h1>TODO List</h1>
+  <p class="note">a place to store your todos</p>
+  <app-filter-to-dos></app-filter-to-dos>
+
+  <!-- *ngFor="let task of tasks" -->
+  <div class="olContainer">
+    <ol type="1">
+      <ng-template ngFor let-task [ngForOf]="tasks">
+        <li [ngClass]="{completed: task.completed}" > 
+          <button *ngIf= !task.completed class="complete-Button" (click)="completeTask(task)">Complete</button>
+          {{ task.task }}
+          <span class="close" (click)="removeTask(task)">X</span>
+        </li>
+      </ng-template>
+    </ol>
+  </div>
+
+  <app-add-to-do-form></app-add-to-do-form>
+</div>
