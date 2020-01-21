@@ -1,0 +1,26 @@
+<h2>== app Component ==</h2>
+
+<app-a></app-a>
+
+
+<h3>== E Component to show input/output and pipes== </h3>
+inputOutputAppToE: <input type="text" #pText (keyup)="0"><br>
+<!-- <app-e [parentData]="pText.value"></app-e> -->
+<app-e (childEvent)="childData=$event"></app-e>
+
+<app-f></app-f>
+<app-g></app-g>
+
+
+<h3>== H&I&J* Components Routing and Navigation ==</h3>
+
+<nav>
+  <a routerLink="/departments" routerLinkActive="activeLinks">Departments</a> <br>
+  <a routerLink="/employees" routerLinkActive="activeLinks">Employees</a>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+
+<app-k></app-k>
